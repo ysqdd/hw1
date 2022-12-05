@@ -77,9 +77,8 @@ body {
     margin: 0;
     padding: 0;
     width: 7%;
-    background-color: white;
     position: fixed;
-    height: 30%;
+    height: 100%;
     overflow: auto;
   }
   
