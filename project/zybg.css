@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin: 4px;
+    background: linear-gradient(#f99,#99f);
+}
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    background-color: rgb(253, 143, 143);
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    width: 140px;
+    list-style: none;
+    text-align: center;
+}
+.nav ul li a {
+    width: 140px;
+    font-size: 25px;
+    color: black;
+}
+.nav ul li a:hover {
+    display: block;
+    background-color: rgb(193, 193, 255);
+    color: white;
+}
+.nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 140px;
+}
+.nav ul li ul li {
+    background-color: pink;
+}
+.nav ul li ul li a:hover {
+    color: white;
+}
+.nav ul li ul li:hover {
+    background-color: pink;
+}
+.nav ul li:hover ul {
+    display: block;
+}
+.main {
+    background: linear-gradient(rgb(237, 186, 186),rgb(181, 181, 237));
+    margin: 0 auto;
+    width: 80%;
+    height: 1415px auto;
+}
+.box {
+    border: 2px solid rgb(255, 202, 202);
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+}
+p {
+    position: relative;
+    padding: 5px;
+    font-size: large;
+    left: 20%;
+}
+h3 {
+    text-align: center;
+}
+.box img {
+    position: relative;
+    padding-left: 30%;
+    width: 70%;
+}
+@media only screen and (max-width: 700px) {
+    .box h2 ,p ,img {
+      width: 50%;
+    }
+}
+.footer {
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    background: rgb(142, 142, 255);
+    margin-top: 20px;
+}

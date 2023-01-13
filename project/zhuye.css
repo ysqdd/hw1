@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    align-items: center;
+}
+body {
+    margin: 4px;
+    background: linear-gradient(#99f,#f99);
+}
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    background-color: rgb(142, 142, 251);
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    width: 140px;
+    list-style: none;
+    text-align: center;
+}
+.nav ul li a {
+    width: 140px;
+    font-size: 25px;
+    color: black;
+}
+.nav ul li a:hover {
+    display: block;
+    background-color: rgb(250, 196, 196);
+    color: white;
+}
+.nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 140px;
+}
+.nav ul li ul li {
+    background-color: rgb(188, 188, 254);
+}
+.nav ul li ul li a:hover {
+    color: white;
+}
+.nav ul li ul li:hover {
+    background-color: rgb(250, 196, 196);
+}
+.nav ul li:hover ul {
+    display: block;
+}
+.gdtp {
+    margin: auto;
+}
+#screen {
+    width: 9999px;
+    height: 9999px;
+    animation: 48s gdtp infinite;
+}
+#screen img{
+    float: left;
+}
+#tv {
+    width: 700px;
+    height: 454px;
+    overflow: hidden;
+}
+@keyframes gdtp {
+    0%{}
+    2%{transform: translateX(0);}
+    8.3%{transform: translateX(-700px);}
+    16.6%{transform: translateX(-1400px);}
+    24.9%{transform: translateX(-2100px);}
+    33.2%{transform: translateX(-2800px);}
+    41.5%{transform: translateX(-3500px);}
+    49.8%{transform: translateX(-4200px);}
+    58.1%{transform: translateX(-4900px);}
+    66.4%{transform: translateX(-5600px);}
+    74.7%{transform: translateX(-6300px);}
+    83%{transform: translateX(-7000px);}
+    91.3%{transform: translateX(-7700px);}
+    100%{transform: translateX(-8400px);}
+}
+.masonry {
+    column-count: 4;
+    column-gap: 0;
+}
+.item {
+    padding: 2px;
+}
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.7s;
+}
+.footer {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    background: rgb(253, 141, 141);
+    margin-top: 20px;
+}
